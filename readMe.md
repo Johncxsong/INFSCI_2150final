@@ -5,6 +5,12 @@ Date: 12/12/2023
 github: [CODE](https://github.com/Johncxsong/INFSCI_2150final.git)  
 
 
+## How to run  
+1. git clone the whole project.  
+2. Use Intellj IDEA to open it.  
+3. Open src folder to run as below.  
+
+
 ## 1. Message Digest  
 #### folder: src--> Main.java  
 using `SHA-256` & `MD5` to encrypt message and output  
