@@ -28,12 +28,13 @@ public class Main {
         byte[] digest = md.digest();
 
         // output
-        StringBuilder hexString = new StringBuilder();
+        StringBuilder hexString = new StringBuilder(2*digest.length);
 
         for(byte b: digest){
-            System.out.print(b+ " ");
+            hexString.append(String.format("%02X",b));
         }
-        System.out.println();
+
+        System.out.println(hexString.toString());
 
     }
 
@@ -42,12 +43,15 @@ public class Main {
         md.update(input.getBytes());
 
         byte[] digest = md.digest();
+
         // output
-        StringBuilder hexString = new StringBuilder();
+        StringBuilder hexString = new StringBuilder(2*digest.length);
 
         for(byte b: digest){
-            System.out.print(b+ " ");
+            hexString.append(String.format("%02X",b));
         }
+
+        System.out.println(hexString.toString());
 
     }
 
